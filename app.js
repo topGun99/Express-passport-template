@@ -23,7 +23,7 @@ app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
 // Express body parser
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json({ extended: true }));
 
 // Express session
 app.use(session({
